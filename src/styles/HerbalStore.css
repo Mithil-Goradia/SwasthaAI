@@ -1,0 +1,332 @@
+/* Main Colors */
+:root {
+    --primary-green: #0e5c36;
+    --light-green: #e8f3ee;
+    --accent-green: #4a8e6a;
+    --text-dark: #333333;
+    --text-light: #666666;
+    --white: #ffffff;
+    --light-bg: #f8f9fa;
+    --border-color: #e0e0e0;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--text-dark);
+    background-color: var(--light-bg);
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    background-color: var(--white);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    padding: 0;
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 70px;
+  }
+  
+  .nav-item {
+    color: var(--text-dark);
+    text-decoration: none;
+    padding: 25px 20px;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .nav-item:hover,
+  .nav-item.active {
+    color: var(--primary-green);
+  }
+  
+  /* Store Banner */
+  .store-banner {
+    background-color: var(--light-green);
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .store-banner h1 {
+    color: var(--primary-green);
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .store-banner p {
+    color: var(--text-light);
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  /* Flash Sale Banner */
+  .flash-sale-banner {
+    background-color: var(--light-green);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px auto;
+    max-width: 1200px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .flash-sale-content {
+    padding: 30px;
+    flex: 1;
+  }
+  
+  .flash-sale-content h2 {
+    color: var(--primary-green);
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .discount {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-green);
+    margin: 10px 0;
+  }
+  
+  .buy-now-btn {
+    background-color: var(--primary-green);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+  }
+  
+  .buy-now-btn:hover {
+    background-color: var(--accent-green);
+  }
+  
+  .flash-sale-image {
+    flex: 1;
+    height: 250px;
+    overflow: hidden;
+  }
+  
+  .flash-sale-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Store Container */
+  .store-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 30px auto;
+    gap: 30px;
+    padding: 0 20px;
+  }
+  
+  /* Sidebar */
+  .store-sidebar {
+    width: 250px;
+    flex-shrink: 0;
+  }
+  
+  .search-container {
+    margin-bottom: 25px;
+  }
+  
+  .search-container input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 0.9rem;
+  }
+  
+  .category-filter,
+  .dosha-filter {
+    margin-bottom: 25px;
+  }
+  
+  .category-filter h3,
+  .dosha-filter h3 {
+    color: var(--primary-green);
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+  
+  .category-filter ul,
+  .dosha-filter ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .category-filter li,
+  .dosha-filter li {
+    padding: 8px 0;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .category-filter li:hover,
+  .dosha-filter li:hover,
+  .category-filter li.active {
+    color: var(--primary-green);
+    font-weight: 500;
+  }
+  
+  /* Products Container */
+  .products-container {
+    flex: 1;
+  }
+  
+  .products-container h2 {
+    color: var(--primary-green);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+  }
+  
+  /* Product Card */
+  .product-card {
+    background-color: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-image {
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+  }
+  
+  .product-card:hover .product-image img {
+    transform: scale(1.05);
+  }
+  
+  .product-info {
+    padding: 15px;
+  }
+  
+  .product-info h3 {
+    margin: 0 0 10px;
+    font-size: 1.1rem;
+    color: var(--text-dark);
+  }
+  
+  .product-rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .star-filled {
+    color: #ffc107;
+  }
+  
+  .star-empty {
+    color: #e0e0e0;
+  }
+  
+  .product-rating span {
+    margin-left: 5px;
+    font-size: 0.8rem;
+    color: var(--text-light);
+  }
+  
+  .product-category {
+    color: var(--text-light);
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+  }
+  
+  .product-description {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-bottom: 15px;
+    line-height: 1.4;
+  }
+  
+  .product-price-cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .product-price {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--primary-green);
+    margin: 0;
+  }
+  
+  .add-to-cart-btn {
+    background-color: var(--primary-green);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .add-to-cart-btn:hover {
+    background-color: var(--accent-green);
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .store-container {
+      flex-direction: column;
+    }
+  
+    .store-sidebar {
+      width: 100%;
+    }
+  
+    .flash-sale-banner {
+      flex-direction: column;
+    }
+  
+    .flash-sale-content,
+    .flash-sale-image {
+      width: 100%;
+    }
+  
+    .nav-container {
+      overflow-x: auto;
+      justify-content: flex-start;
+    }
+  }
+  
+  
