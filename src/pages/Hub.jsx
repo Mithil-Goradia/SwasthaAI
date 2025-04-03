@@ -28,6 +28,11 @@ const doctors = [
   },
 ];
 
+const ngos = [
+  { id: 1, name: "Ayush Seva", description: "Promoting holistic healing and wellness through Ayurveda.", image: "./ayush.png" },
+  { id: 2, name: "Herbal Life NGO", description: "Supporting communities with herbal healthcare initiatives.", image: "./herba.png" },
+];
+
 const Hub = () => {
   const [activeTab, setActiveTab] = useState("doctors");
   const [messages, setMessages] = useState([]);
@@ -37,7 +42,7 @@ const Hub = () => {
   const [articles] = useState([
     { id: 1, title: "Basics of Ayurveda", content: "Learn about the foundational principles of Ayurveda." },
     { id: 2, title: "Herbal Remedies", content: "Discover natural remedies for common ailments." },
-    { id: 3, title: "Panchakarma Detox", content: "Understand the Ayurvedic cleansing process." },
+    { id: 3, title: "Panchakarma Detox", content: "Understand the Ayurvedic cleansing process.", },
   ]);
 
   const handleSendMessage = () => {
@@ -62,6 +67,7 @@ const Hub = () => {
           {[
             { key: "doctors", label: "Doctors" },
             { key: "ai", label: "AI Check" },
+            { key:"ayush", label: "Ayush" },
             { key: "library", label: "Library" },
           ].map((tab) => (
             <button
@@ -162,7 +168,28 @@ const Hub = () => {
                 ))}
               </div>
             </div>
-          )}
+        )}
+
+        {/* AI Chat Section */}
+        {activeTab === "ayush" && (
+           <div className="mt-10">
+            <h2 className="text-3xl font-bold text-green-900 text-center">Ayush & NGOs</h2>
+            <p className="text-gray-600 text-center mt-2">Supporting traditional healing and community well-being.</p>
+
+            <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+              {ngos.map((ngo) => (
+                <div key={ngo.id} className="bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition-all">
+                  <img src={ngo.image} alt={ngo.name} className="w-32 h-32 mx-auto rounded-lg" />
+                  <h3 className="text-xl font-semibold text-center mt-3">{ngo.name}</h3>
+                  <p className="text-gray-500 text-center mt-2">{ngo.description}</p>
+                  <button className="mt-4 bg-green-900 text-white py-2 px-4 rounded-lg w-full hover:bg-green-700 transition-all">
+                    Learn More
+                  </button>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}  
       </div>
     </div>
   );

@@ -105,7 +105,7 @@ const KYD = () => {
       <Navbar />
       
       <div className="flex justify-evenly pt-20">
-        <div className="p-6 max-w-lg mx-auto mt-0 bg-white/80 bg-opacity-90 shadow-lg rounded-lg text-center">
+        <div className="p-6 max-w-lg mx-auto mt-0 bg-white bg-opacity-90 shadow-lg rounded-lg text-center">
           <h2 className="text-3xl font-bold text-green-900 mb-6">Know Your Dosha</h2>
           
           <div className="mb-6">
