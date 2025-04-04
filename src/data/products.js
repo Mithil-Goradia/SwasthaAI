@@ -2,7 +2,7 @@ export const herbProducts = [
     {
       id: 1,
       name: "Ashwagandha Root Powder",
-      image: "/images/ashwagandha.jpg",
+      image: "/ashwagandha-powder.jpg",
       price: 349,
       rating: 4.8,
       category: "Herbs & Powders",
@@ -11,7 +11,7 @@ export const herbProducts = [
     {
       id: 2,
       name: "Triphala Powder",
-      image: "/images/triphala.jpg",
+      image: "/triphala.jpg",
       price: 299,
       rating: 4.7,
       category: "Herbs & Powders",
@@ -20,7 +20,7 @@ export const herbProducts = [
     {
       id: 3,
       name: "Brahmi Leaf Powder",
-      image: "/images/brahmi.jpg",
+      image: "/brahmi.jpg",
       price: 399,
       rating: 4.6,
       category: "Herbs & Powders",
@@ -29,7 +29,7 @@ export const herbProducts = [
     {
       id: 4,
       name: "Turmeric Root Powder",
-      image: "/images/turmeric.jpg",
+      image: "/turmeric.jpg",
       price: 249,
       rating: 4.9,
       category: "Herbs & Powders",
@@ -38,7 +38,7 @@ export const herbProducts = [
     {
       id: 5,
       name: "Shatavari Root Powder",
-      image: "/images/shatavari.jpg",
+      image: "/shatavari.png",
       price: 399,
       rating: 4.5,
       category: "Herbs & Powders",
@@ -47,7 +47,7 @@ export const herbProducts = [
     {
       id: 6,
       name: "Amla Berry Powder",
-      image: "/images/amla.jpg",
+      image: "/amla.jpg",
       price: 279,
       rating: 4.7,
       category: "Herbs & Powders",
@@ -59,7 +59,7 @@ export const herbProducts = [
     {
       id: 7,
       name: "Vata Balance Kit",
-      image: "/images/vata-kit.jpg",
+      image: "/vata-kit.jpg",
       price: 1299,
       rating: 4.8,
       category: "Wellness Kits",
@@ -68,7 +68,7 @@ export const herbProducts = [
     {
       id: 8,
       name: "Pitta Harmony Kit",
-      image: "/images/pitta-kit.jpg",
+      image: "/pitta-kit.jpg",
       price: 1299,
       rating: 4.7,
       category: "Wellness Kits",
@@ -77,7 +77,7 @@ export const herbProducts = [
     {
       id: 9,
       name: "Kapha Vitality Kit",
-      image: "/images/kapha-kit.jpg",
+      image: "/kapha-kit.jpg",
       price: 1299,
       rating: 4.6,
       category: "Wellness Kits",
@@ -86,7 +86,7 @@ export const herbProducts = [
     {
       id: 10,
       name: "Sleep & Relaxation Kit",
-      image: "/images/sleep-kit.jpg",
+      image: "/sleep-kit.webp",
       price: 1499,
       rating: 4.9,
       category: "Wellness Kits",
@@ -95,7 +95,7 @@ export const herbProducts = [
     {
       id: 11,
       name: "Digestive Wellness Kit",
-      image: "/images/digestive-kit.jpg",
+      image: "/digestive-kit.webp",
       price: 1399,
       rating: 4.8,
       category: "Wellness Kits",
@@ -104,7 +104,7 @@ export const herbProducts = [
     {
       id: 12,
       name: "Immunity Booster Kit",
-      image: "/images/immunity-kit.jpg",
+      image: "/immunity-kit.jpg",
       price: 1599,
       rating: 4.9,
       category: "Wellness Kits",

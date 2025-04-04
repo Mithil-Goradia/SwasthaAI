@@ -11,7 +11,7 @@ const Navbar = () => {
         <Link to="/kyd" className="cursor-pointer hover:text-green-700 transition-all duration-300">Know Your Dosha</Link>
         <Link to="/hub" className="cursor-pointer hover:text-green-700 transition-all duration-300">AyurCare Hub</Link>
         <Link to="/store" className="cursor-pointer hover:text-green-700 transition-all duration-300">Store</Link>
-        <Link to="/pass" className="cursor-pointer hover:text-green-700 transition-all duration-300">Pass</Link>
+        <Link to="/price" className="cursor-pointer hover:text-green-700 transition-all duration-300">Pricing</Link>
         <Link to="/scan" className="cursor-pointer hover:text-green-700 transition-all duration-300">NatureScan</Link>
       </div>
       <Link to="/profile" className="text-green-900 hover:text-green-700 transition-all duration-300">
