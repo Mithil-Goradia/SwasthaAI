@@ -6,6 +6,7 @@ import HerbalStore from './pages/HerbalStore';
 import Hub from './pages/Hub';
 import NatureScan from './pages/NatureScan'
 import PricingPage from './pages/PricingPage';
+import Heatmap from './pages/HeatMap';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/store" element={<HerbalStore />} />
         <Route path="/scan" element={<NatureScan />} />
         <Route path="/price" element={<PricingPage />} />
+        <Route path="/heat" element={<Heatmap />} />
     </Routes>
   );
 }

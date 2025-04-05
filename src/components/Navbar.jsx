@@ -13,6 +13,7 @@ const Navbar = () => {
         <Link to="/store" className="cursor-pointer hover:text-green-700 transition-all duration-300">Store</Link>
         <Link to="/price" className="cursor-pointer hover:text-green-700 transition-all duration-300">Pricing</Link>
         <Link to="/scan" className="cursor-pointer hover:text-green-700 transition-all duration-300">NatureScan</Link>
+        <Link to="/heat" className="cursor-pointer hover:text-green-700 transition-all duration-300">Heatmap</Link>
       </div>
       <Link to="/profile" className="text-green-900 hover:text-green-700 transition-all duration-300">
         <FaUserCircle size={28} />
